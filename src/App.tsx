@@ -17,14 +17,18 @@ function App() {
             Manage your store at ease
           </h1>
           <div className="flex justify-center mb-2">
-            <div className="rounded-sm bg-sky-700 hover:bg-sky-800 min-w-32 grid justify-center items-center text-sky-50 h-8 me-3">
-              <a href="#">Register</a>
-            </div>
-            <div className="rounded-sm bg-sky-700 hover:bg-sky-800 min-w-32 grid justify-center items-center text-sky-50 h-8 ms-3">
-              <a href="#">Log In</a>
-            </div>
+            <a href="#">
+              <div className="rounded-sm bg-sky-700 hover:bg-sky-800 min-w-32 grid justify-center items-center text-sky-50 h-8 me-3">
+                Register
+              </div>
+            </a>
+            <a href="#">
+              <div className="rounded-sm bg-sky-700 hover:bg-sky-800 min-w-32 grid justify-center items-center text-sky-50 h-8 ms-3">
+                Log In
+              </div>
+            </a>
           </div>
-          <div className="rounded-sm shadow-lg shadow-gray-400 hover:bg-gray-200 min-w-32 grid justify-center items-center h-8">
+          <div className="rounded-sm border shadow-gray-400 hover:bg-gray-200 min-w-32 grid justify-center items-center h-8">
             <span className="text-gray-900 font-medium">Google</span>
           </div>
         </div>
