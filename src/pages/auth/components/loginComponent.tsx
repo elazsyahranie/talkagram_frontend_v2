@@ -80,6 +80,13 @@ function LoginComponent() {
         <div className="rounded-sm border border-gray-400 bg-gray-100 hover:bg-gray-300 w-full grid justify-center items-center h-12 me-3 font-medium text-gray-700 mb-4">
           Continue with Google
         </div>
+
+        <p className="text-sm text-center">
+          <span className="text-gray-800 ">Forget your</span>{' '}
+          <a href="#" className="text-blue-600 underline">
+            password?
+          </a>
+        </p>
       </div>
     </>
   );
