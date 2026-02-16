@@ -21,11 +21,11 @@ function Register() {
   });
 
   const formLabels = [
-    { label: 'First Name', name: 'firstName', type: 'text' },
-    { label: 'Middle Name', name: 'middleName', type: 'text' },
-    { label: 'Last Name', name: 'lastName', type: 'text' },
-    { label: 'Email', name: 'email', type: 'email' },
-    { label: 'Password', name: 'password', type: 'password' },
+    { label: 'First Name', id: 'firstName', type: 'text' },
+    { label: 'Middle Name', id: 'middleName', type: 'text' },
+    { label: 'Last Name', id: 'lastName', type: 'text' },
+    { label: 'Email', id: 'email', type: 'email' },
+    { label: 'Password', id: 'password', type: 'password' },
   ];
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -54,32 +54,48 @@ function Register() {
 
   return (
     <>
-      <div className="grid h-screen">
-        <div className="m-auto">
-          <div className="border rounded-md min-w-lg">
-            <h1 className="text-4xl mb-2">Register</h1>
+      <div className="flex h-screen">
+        {/* <div className="m-auto"> */}
+        {/* <div className="border rounded-md min-w-lg"> */}
+        <div className="w-[50vw] bg-teal-700">
+          {/* <h1>Add background here</h1> */}
+        </div>
+        <div className="w-[50vw] flex justify-center">
+          <div className="w-[80%] pt-20">
+            <h1 className="text-4xl font-bold text-center mb-4">Register</h1>
             <form onSubmit={handleSubmit}>
-              {formLabels.map((item, index) => {
-                return (
-                  <div key={index}>
-                    <label htmlFor={item.name}>{item.label}</label>
-                    <br></br>
-                    <input
-                      type={item.type}
-                      id={item.name}
-                      name={item.name}
-                      onChange={(e) => handleChange(e)}
-                      className="border"
-                    />
-                    <br></br>
-                  </div>
-                );
-              })}
-              <input type="submit" value="Submit" className="border"></input>
+              <div className="mb-4">
+                {formLabels.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      <label htmlFor={item.id} className="text-sm">
+                        {item.label}
+                      </label>
+                      <br></br>
+                      <input
+                        type={item.type}
+                        id={item.id}
+                        name={item.id}
+                        // defaultValue={item.label}
+                        onChange={(e) => handleChange(e)}
+                        className="border border-gray-300 rounded-sm w-full h-9 mb-2"
+                      ></input>
+                      <br></br>
+                    </div>
+                  );
+                })}
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                className="rounded-sm bg-sky-700 hover:bg-sky-800 w-full grid justify-center items-center text-sky-50 h-10 me-3"
+              ></input>
             </form>
           </div>
         </div>
       </div>
+      {/* </div> */}
+      {/* </div> */}
     </>
   );
 }
