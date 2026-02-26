@@ -6,7 +6,7 @@ function Login() {
   return (
     <>
       <div className="flex h-screen">
-        <div className="w-[50vw] bg-teal-700"></div>
+        <div className="w-[50vw] bg-sky-700"></div>
         <div className="w-[50vw] flex justify-center overflow-visible">
           <LoginComponent />
         </div>
