@@ -79,7 +79,7 @@ function RegisterComponent() {
           <input
             type="submit"
             value="Submit"
-            className="rounded-sm bg-sky-700 hover:bg-sky-800 w-full grid justify-center items-center text-sky-50 h-12 me-3 font-medium"
+            className="rounded-sm bg-sky-800 hover:bg-sky-900 w-full grid justify-center items-center text-sky-50 h-12 me-3 font-medium"
           ></input>
         </form>
 
