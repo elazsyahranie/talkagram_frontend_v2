@@ -64,6 +64,16 @@ function LoginComponent() {
               );
             })}
           </div>
+          <div className="mb-4">
+            <input
+              type="checkbox"
+              id="keepsignedin"
+              name="fav_language"
+              value="KeepSignedIn"
+              className="mr-2"
+            ></input>
+            <label htmlFor="keepsignedin">Keep me signed in</label>
+          </div>
           <input
             type="submit"
             value="Submit"
@@ -81,10 +91,17 @@ function LoginComponent() {
           Continue with Google
         </div>
 
-        <p className="text-sm text-center">
-          <span className="text-gray-800 ">Forget your</span>{' '}
+        <p className="text-sm text-center mb-4">
+          <span className="text-gray-600">Forget your</span>{' '}
           <a href="#" className="text-blue-600 underline">
             password?
+          </a>
+        </p>
+
+        <p className="text-center">
+          <span className="text-gray-800 ">Don't have an account?</span>{' '}
+          <a href="/register" className="text-blue-600 underline">
+            Register
           </a>
         </p>
       </div>

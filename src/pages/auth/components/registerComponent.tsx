@@ -93,7 +93,7 @@ function RegisterComponent() {
           Continue with Google
         </div>
 
-        <p className="w-full text-sm">
+        <p className="w-full text-sm mb-4">
           By creating an account, you agree to the{' '}
           <a href="#" className="text-blue-600 underline">
             Terms of Service
@@ -103,6 +103,13 @@ function RegisterComponent() {
             Kiosk Privacy Statement
           </a>
           . We'll occasionally send you account-related emails.
+        </p>
+
+        <p className="text-center">
+          <span className="text-gray-800 ">Already have an account?</span>{' '}
+          <a href="/login" className="text-blue-600 underline">
+            Sign in
+          </a>
         </p>
       </div>
     </>
