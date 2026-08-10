@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { ChangeEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function LoginComponent() {
   type FormData = {
@@ -16,6 +17,8 @@ function LoginComponent() {
     { label: 'Phone/Email/Username', id: 'phoneEmailUsername', type: 'text' },
     { label: 'Password', id: 'password', type: 'password' },
   ];
+
+  const navigate = useNavigate();
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -40,6 +43,7 @@ function LoginComponent() {
     */
     localStorage.setItem('phoneEmailUsername', formData.phoneEmailUsername);
     localStorage.setItem('password', formData.password);
+    navigate('/home');
     console.dir(formData, { depth: null });
   };
 
