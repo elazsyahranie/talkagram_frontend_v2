@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from 'react-router-dom';
 
 const ProtectedRoute = () => {
-  const isAuthenticated = Boolean(localStorage.getItem('name'));
+  const isAuthenticated = Boolean(localStorage.getItem('phoneEmailUsername'));
 
   if (!isAuthenticated) {
     return <Navigate to="/login" replace />;
