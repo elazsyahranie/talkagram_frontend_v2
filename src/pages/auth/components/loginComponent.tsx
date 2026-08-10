@@ -30,12 +30,17 @@ function LoginComponent() {
     // Prevent the default page reload
     event.preventDefault();
     // You can add validation, API calls, etc. here
-    console.dir(formData, { depth: null });
     // Optional: Reset the form field
-    setFormData(() => ({
-      phoneEmailUsername: '',
-      password: '',
-    }));
+    // setFormData(() => ({
+    //   phoneEmailUsername: '',
+    //   password: '',
+    // }));
+    /* 
+      Better to store the JWT as httpOnly cookie on production
+    */
+    localStorage.setItem('phoneEmailUsername', formData.phoneEmailUsername);
+    localStorage.setItem('password', formData.password);
+    console.dir(formData, { depth: null });
   };
 
   return (
