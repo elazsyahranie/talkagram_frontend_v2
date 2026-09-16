@@ -26,9 +26,13 @@ function Home() {
                 return (
                   <div
                     key={index}
-                    className="rounded-md flex hover:bg-gray-200 h-16 max-w-88 border border-gray-950"
+                    className="rounded-md flex hover:bg-gray-200 h-16 max-w-88"
                   >
-                    <h2 className="text-center my-auto min-w-12">Prof</h2>
+                    {/* <h2 className="text-center my-auto min-w-12">Prof</h2> */}
+                    <InlineIcon
+                      icon="iconamoon:profile-circle-fill"
+                      className="text-6xl my-auto text-gray-400 min-w-12"
+                    />
                     <div className="my-auto min-w-0">
                       <h2 className="font-bold">Username</h2>
                       <h3 className="truncate">
