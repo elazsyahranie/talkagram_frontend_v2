@@ -28,7 +28,12 @@ function Home() {
                     key={index}
                     className="rounded-md hover:bg-gray-200 h-16"
                   >
-                    <h2>Chat boxes here</h2>
+                    <h2 className="font-bold">Username</h2>
+                    <h3 className="truncate">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ullam obcaecati iste illum perferendis non in suscipit
+                      quis deleniti dolorem ducimus!
+                    </h3>
                   </div>
                 );
               })}
