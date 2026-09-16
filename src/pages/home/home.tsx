@@ -26,14 +26,17 @@ function Home() {
                 return (
                   <div
                     key={index}
-                    className="rounded-md hover:bg-gray-200 h-16"
+                    className="rounded-md flex hover:bg-gray-200 h-16 max-w-88 border border-gray-950"
                   >
-                    <h2 className="font-bold">Username</h2>
-                    <h3 className="truncate">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Ullam obcaecati iste illum perferendis non in suscipit
-                      quis deleniti dolorem ducimus!
-                    </h3>
+                    <h2 className="text-center my-auto min-w-12">Prof</h2>
+                    <div className="my-auto min-w-0">
+                      <h2 className="font-bold">Username</h2>
+                      <h3 className="truncate">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Ullam obcaecati iste illum perferendis non in
+                        suscipit quis deleniti dolorem ducimus!
+                      </h3>
+                    </div>
                   </div>
                 );
               })}
