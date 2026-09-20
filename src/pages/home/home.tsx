@@ -17,9 +17,12 @@ function Home() {
   return (
     <>
       <div className="flex h-screen">
-        <div className="w-[30%] h-screen overflow-hidden">
-          <div className="flex ms-2 me-4 border">
-            <InlineIcon icon="material-symbols:menu" className="text-2xl m-3" />
+        <div className="w-[30%] h-screen bg-gray-800 overflow-hidden">
+          <div className="flex ms-2 me-4">
+            <InlineIcon
+              icon="material-symbols:menu"
+              className="text-2xl text-white m-3"
+            />
             <form className="flex-1 mt-1 mb-1">
               <input
                 type="text"
@@ -27,7 +30,7 @@ function Home() {
                 name="search"
                 // defaultValue={item.label}
                 // onChange={(e) => handleChange(e)}
-                className="border border-gray-950 rounded-full w-full h-full mb-2"
+                className="border border-gray-950 bg-gray-700 rounded-full w-full h-full mb-2"
               ></input>
             </form>
           </div>
@@ -37,15 +40,15 @@ function Home() {
                 return (
                   <div
                     key={index}
-                    className="rounded-md flex hover:bg-gray-200 h-16 max-w-88"
+                    className="rounded-lg flex hover:bg-gray-700 mb-2 text-white h-16 max-w-88"
                   >
                     {/* <h2 className="text-center my-auto min-w-12">Prof</h2> */}
                     <InlineIcon
                       icon="iconamoon:profile-circle-fill"
-                      className="text-6xl my-auto text-gray-400 min-w-12"
+                      className="text-6xl my-auto mr-2 text-gray-400 min-w-12"
                     />
-                    <div className="my-auto min-w-0">
-                      <h2 className="font-bold">{item}</h2>
+                    <div className="my-auto ml-2 min-w-0">
+                      <h2 className="font-medium">{item}</h2>
                       <h3 className="truncate">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Ullam obcaecati iste illum perferendis non in
