@@ -1,7 +1,18 @@
 import { InlineIcon } from '@iconify/react';
 
 function Home() {
-  const chatBoxes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const chatBoxes = [
+    'Adrian',
+    'Maya',
+    'Ethan',
+    'Nadia',
+    'Julian',
+    'Clara',
+    'Rafael',
+    'Sophie',
+    'Dylan',
+    'Amara',
+  ];
 
   return (
     <>
@@ -22,7 +33,7 @@ function Home() {
           </div>
           <div className="h-screen ms-2 overflow-y-scroll">
             <div>
-              {chatBoxes.map((_item, index) => {
+              {chatBoxes.map((item, index) => {
                 return (
                   <div
                     key={index}
@@ -34,7 +45,7 @@ function Home() {
                       className="text-6xl my-auto text-gray-400 min-w-12"
                     />
                     <div className="my-auto min-w-0">
-                      <h2 className="font-bold">Username</h2>
+                      <h2 className="font-bold">{item}</h2>
                       <h3 className="truncate">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Ullam obcaecati iste illum perferendis non in
