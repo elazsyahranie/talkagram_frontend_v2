@@ -18,7 +18,8 @@ function Home() {
   return (
     <>
       <div className="flex h-screen">
-        <div className="w-[30%] h-screen bg-gray-800 overflow-hidden">
+        <div className="w-[30%] h-screen text-white bg-gray-800 overflow-hidden">
+          <h1 className="text-4xl ms-2 my-3 font-semibold">Talkagram</h1>
           <div className="flex ms-2 me-4">
             <InlineIcon
               icon="material-symbols:menu"
@@ -42,7 +43,7 @@ function Home() {
                 return (
                   <div
                     key={index}
-                    className="h-18 rounded-lg flex items-center hover:bg-gray-700 mb-2 text-white max-w-88"
+                    className="h-18 rounded-lg flex items-center hover:bg-gray-700 mb-2 max-w-88"
                   >
                     {/* <h2 className="text-center my-auto min-w-12">Prof</h2> */}
                     <InlineIcon
