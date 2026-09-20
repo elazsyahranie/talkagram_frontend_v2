@@ -2,16 +2,16 @@ import { InlineIcon } from '@iconify/react';
 
 function Home() {
   const chatBoxes = [
-    'Adrian',
-    'Maya',
-    'Ethan',
-    'Nadia',
-    'Julian',
-    'Clara',
-    'Rafael',
-    'Sophie',
-    'Dylan',
-    'Amara',
+    { name: 'Adrian', city: 'Jakarta' },
+    { name: 'Maya', city: 'Bandung' },
+    { name: 'Ethan', city: 'Surabaya' },
+    { name: 'Nadia', city: 'Yogyakarta' },
+    { name: 'Julian', city: 'Medan' },
+    { name: 'Clara', city: 'Semarang' },
+    { name: 'Rafael', city: 'Makassar' },
+    { name: 'Sophie', city: 'Denpasar' },
+    { name: 'Dylan', city: 'Malang' },
+    { name: 'Amara', city: 'Palembang' },
   ];
 
   return (
@@ -48,11 +48,10 @@ function Home() {
                       className="text-6xl my-auto mr-2 text-gray-400 min-w-12"
                     />
                     <div className="my-auto ml-2 min-w-0">
-                      <h2 className="font-medium">{item}</h2>
+                      <h2 className="font-medium">{item.name}</h2>
                       <h3 className="truncate">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ullam obcaecati iste illum perferendis non in
-                        suscipit quis deleniti dolorem ducimus!
+                        Greetings! I'm {item.name} from {item.city}. Nice to
+                        meet you!
                       </h3>
                     </div>
                   </div>
