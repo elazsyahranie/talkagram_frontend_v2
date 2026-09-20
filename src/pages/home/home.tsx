@@ -37,11 +37,12 @@ function Home() {
           </div>
           <div className="h-screen ms-2 chatBoxContainer overflow-y-scroll">
             <div>
+              {/* h16 */}
               {chatBoxes.map((item, index) => {
                 return (
                   <div
                     key={index}
-                    className="rounded-lg flex hover:bg-gray-700 mb-2 text-white h-16 max-w-88"
+                    className="h-18 rounded-lg flex items-center hover:bg-gray-700 mb-2 text-white max-w-88"
                   >
                     {/* <h2 className="text-center my-auto min-w-12">Prof</h2> */}
                     <InlineIcon
