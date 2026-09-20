@@ -1,4 +1,5 @@
 import { InlineIcon } from '@iconify/react';
+import './home.css';
 
 function Home() {
   const chatBoxes = [
@@ -34,7 +35,7 @@ function Home() {
               ></input>
             </form>
           </div>
-          <div className="h-screen ms-2 overflow-y-scroll">
+          <div className="h-screen ms-2 chatBoxContainer overflow-y-scroll">
             <div>
               {chatBoxes.map((item, index) => {
                 return (
