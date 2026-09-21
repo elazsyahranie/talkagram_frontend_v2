@@ -2,7 +2,7 @@ import { InlineIcon } from '@iconify/react';
 import './home.css';
 
 function Home() {
-  const chatBoxes = [
+  const chatsList = [
     { name: 'Adrian', city: 'Jakarta' },
     { name: 'Maya', city: 'Bandung' },
     { name: 'Ethan', city: 'Surabaya' },
@@ -18,7 +18,7 @@ function Home() {
   return (
     <>
       <div className="flex h-screen">
-        <div className="w-[30%] h-screen text-white bg-gray-800 overflow-hidden">
+        <div className="w-[30%] h-screen text-white bg-gray-800 border-r border-gray-500 overflow-hidden">
           <h1 className="text-4xl ms-2 my-3 font-semibold">Talkagram</h1>
           <div className="flex ms-2 me-4">
             <InlineIcon
@@ -39,7 +39,7 @@ function Home() {
           <div className="h-screen ms-2 chatBoxContainer overflow-y-scroll">
             <div>
               {/* h16 */}
-              {chatBoxes.map((item, index) => {
+              {chatsList.map((item, index) => {
                 return (
                   <div
                     key={index}
@@ -63,9 +63,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="w-[80%] border">
-          <h1>Right</h1>
-        </div>
+        <div className="w-[80%] bg-gray-700">{/* <h1>Right</h1> */}</div>
       </div>
     </>
   );
