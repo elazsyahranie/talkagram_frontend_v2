@@ -11,12 +11,14 @@ function Home() {
     id: number;
     name: string;
     status: string;
+    message: string;
   };
 
   const [selectedChat, setSelectedChat] = useState<SelectedChat>({
     id: 0,
     name: '',
     status: '',
+    message: '',
   });
   // console.dir(selectedChat, { depth: null });
 
@@ -25,35 +27,75 @@ function Home() {
   // };
 
   const chatsList = [
-    { id: 1, name: 'Adrian', city: 'Jakarta', status: 'Online' },
+    {
+      id: 1,
+      name: 'Adrian Blake',
+      city: 'Jakarta',
+      message: 'Hey, how are you?',
+      status: 'Online',
+    },
     {
       id: 2,
-      name: 'Maya',
+      name: 'Maya Collins',
       city: 'Bandung',
-      status: 'Last seen today on 08:00',
+      message: 'See you tomorrow!',
+      status: 'Last seen on 08:00',
     },
-    { id: 3, name: 'Ethan', city: 'Surabaya', status: '' },
+    {
+      id: 3,
+      name: 'Ethan Parker',
+      city: 'Surabaya',
+      message: 'That sounds great.',
+      status: '',
+    },
     {
       id: 4,
-      name: 'Nadia',
+      name: 'Nadia Wilson',
       city: 'Yogyakarta',
-      status: 'Last seen today on 08:00',
+      message: "I'm on my way.",
+      status: 'Last seen on 08:00',
     },
-    { id: 5, name: 'Julian', city: 'Medan', status: 'Online' },
-    { id: 6, name: 'Clara', city: 'Semarang', status: 'Online' },
-    { id: 7, name: 'Rafael', city: 'Makassar', status: '' },
+    {
+      id: 5,
+      name: 'Julian Carter',
+      city: 'Medan',
+      message: 'Have a nice day!',
+      status: 'Online',
+    },
+    {
+      id: 6,
+      name: 'Clara Morgan',
+      city: 'Semarang',
+      message: 'What are you doing?',
+      status: 'Last seen on 08:00',
+    },
+    {
+      id: 7,
+      name: 'Rafael Brooks',
+      city: 'Makassar',
+      message: "Let's meet later.",
+      status: 'Last seen on 08:00',
+    },
     {
       id: 8,
-      name: 'Sophie',
+      name: 'Sophie Bennett',
       city: 'Denpasar',
-      status: 'Last seen today on 08:00',
+      message: 'Thanks for helping!',
+      status: '',
     },
-    { id: 9, name: 'Dylan', city: 'Malang', status: 'Online' },
+    {
+      id: 9,
+      name: 'Dylan Foster',
+      city: 'Malang',
+      message: 'See you soon.',
+      status: '',
+    },
     {
       id: 10,
-      name: 'Amara',
+      name: 'Amara Hayes',
       city: 'Palembang',
-      status: 'Last seen today on 08:00',
+      message: 'Good morning!',
+      status: 'Online',
     },
   ];
 
@@ -92,6 +134,7 @@ function Home() {
                           id: item.id,
                           name: item.name,
                           status: item.status,
+                          message: item.message,
                         })
                       // onClick={() => {
                       //   setChat(item.name);
@@ -114,10 +157,7 @@ function Home() {
                         <h2 className="font-medium">{item.name}</h2>
                         <h3 className="text-xs">08:00</h3>
                       </div>
-                      <h3 className="truncate">
-                        Greetings! I'm {item.name} from {item.city}. Nice to
-                        meet you!
-                      </h3>
+                      <h3 className="truncate">{item.message}</h3>
                     </div>
                   </div>
                 );
