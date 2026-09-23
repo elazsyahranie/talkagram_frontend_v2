@@ -60,8 +60,11 @@ function Home() {
                       icon="iconamoon:profile-circle-fill"
                       className="text-6xl my-auto mr-2 text-gray-400 min-w-12"
                     />
-                    <div className="my-auto ml-2 min-w-0">
-                      <h2 className="font-medium">{item.name}</h2>
+                    <div className="my-auto mx-1 min-w-0">
+                      <div className="flex justify-between items-center">
+                        <h2 className="font-medium">{item.name}</h2>
+                        <h3 className="text-xs">08:00</h3>
+                      </div>
                       <h3 className="truncate">
                         Greetings! I'm {item.name} from {item.city}. Nice to
                         meet you!
@@ -83,7 +86,10 @@ function Home() {
                   icon="iconamoon:profile-circle-fill"
                   className="text-6xl my-auto mr-2 text-gray-400 min-w-12"
                 />
-                <h2 className="text-lg font-medium">{chat}</h2>
+                <div>
+                  <h2 className="text-lg font-medium">{chat}</h2>
+                  <h3 className="text-sm">Online</h3>
+                </div>
               </div>
             </div>
           )}
