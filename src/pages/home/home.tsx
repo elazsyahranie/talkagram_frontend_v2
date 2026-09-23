@@ -4,24 +4,57 @@ import { useState } from 'react';
 import './home.css';
 
 function Home() {
-  const [chat, setChat] = useState('');
-  console.log(chat);
+  // const [chat, setChat] = useState('');
+  // console.log(chat);
+
+  type SelectedChat = {
+    id: number;
+    name: string;
+    status: string;
+  };
+
+  const [selectedChat, setSelectedChat] = useState<SelectedChat>({
+    id: 0,
+    name: '',
+    status: '',
+  });
+  // console.dir(selectedChat, { depth: null });
 
   // const handleChooseChat = (event: ChangeEvent<HTMLFormElement>) => {
 
   // };
 
   const chatsList = [
-    { id: 1, name: 'Adrian', city: 'Jakarta' },
-    { id: 2, name: 'Maya', city: 'Bandung' },
-    { id: 3, name: 'Ethan', city: 'Surabaya' },
-    { id: 4, name: 'Nadia', city: 'Yogyakarta' },
-    { id: 5, name: 'Julian', city: 'Medan' },
-    { id: 6, name: 'Clara', city: 'Semarang' },
-    { id: 7, name: 'Rafael', city: 'Makassar' },
-    { id: 8, name: 'Sophie', city: 'Denpasar' },
-    { id: 9, name: 'Dylan', city: 'Malang' },
-    { id: 10, name: 'Amara', city: 'Palembang' },
+    { id: 1, name: 'Adrian', city: 'Jakarta', status: 'Online' },
+    {
+      id: 2,
+      name: 'Maya',
+      city: 'Bandung',
+      status: 'Last seen today on 08:00',
+    },
+    { id: 3, name: 'Ethan', city: 'Surabaya', status: '' },
+    {
+      id: 4,
+      name: 'Nadia',
+      city: 'Yogyakarta',
+      status: 'Last seen today on 08:00',
+    },
+    { id: 5, name: 'Julian', city: 'Medan', status: 'Online' },
+    { id: 6, name: 'Clara', city: 'Semarang', status: 'Online' },
+    { id: 7, name: 'Rafael', city: 'Makassar', status: '' },
+    {
+      id: 8,
+      name: 'Sophie',
+      city: 'Denpasar',
+      status: 'Last seen today on 08:00',
+    },
+    { id: 9, name: 'Dylan', city: 'Malang', status: 'Online' },
+    {
+      id: 10,
+      name: 'Amara',
+      city: 'Palembang',
+      status: 'Last seen today on 08:00',
+    },
   ];
 
   return (
@@ -53,7 +86,23 @@ function Home() {
                   <div
                     key={index}
                     className="h-18 rounded-lg flex items-center hover:bg-gray-700 hover:cursor-pointer mb-2 max-w-88"
-                    onClick={() => setChat(item.name)}
+                    onClick={
+                      () =>
+                        setSelectedChat({
+                          id: item.id,
+                          name: item.name,
+                          status: item.status,
+                        })
+                      // onClick={() => {
+                      //   setChat(item.name);
+                      //   () =>
+                      //     setSelectedChat({
+                      //       id: item.id,
+                      //       name: item.name,
+                      //       status: item.status,
+                      //     });
+                      // }}
+                    }
                   >
                     {/* <h2 className="text-center my-auto min-w-12">Prof</h2> */}
                     <InlineIcon
@@ -78,7 +127,7 @@ function Home() {
         </div>
         <div className="w-[80%] bg-gray-700">
           {/* <h1>Right</h1> */}
-          {chat && (
+          {selectedChat.id ? (
             <div className="bg-gray-800 h-21">
               <div className="mx-8 h-full flex items-center">
                 {/* <h1>Name here</h1> */}
@@ -87,12 +136,15 @@ function Home() {
                   className="text-6xl my-auto mr-2 text-gray-400 min-w-12"
                 />
                 <div>
-                  <h2 className="text-lg font-medium">{chat}</h2>
-                  <h3 className="text-sm">Online</h3>
+                  <h2 className="text-lg font-medium">{selectedChat.name}</h2>
+                  {/* {chatsList ? chatsList.status ?} */}
+                  <h3 className="text-sm">
+                    {selectedChat.status && selectedChat.status}
+                  </h3>
                 </div>
               </div>
             </div>
-          )}
+          ) : null}
         </div>
       </div>
     </>
