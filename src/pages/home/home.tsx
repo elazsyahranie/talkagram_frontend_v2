@@ -120,6 +120,14 @@ function Home() {
               ></input>
             </form>
           </div>
+          <div className="flex ms-2 me-4">
+            <div className="border border-gray-500 bg-sky-700/35 rounded-full px-3 py-1 text-sm me-3">
+              Private
+            </div>
+            <div className="border border-gray-500  rounded-full px-3 py-1 text-sm me-3">
+              Group
+            </div>
+          </div>
           <div className="h-screen ms-2 chatBoxContainer overflow-y-scroll">
             <div>
               {/* h16 */}
