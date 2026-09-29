@@ -31,71 +31,71 @@ function Home() {
       id: 1,
       name: 'Adrian Blake',
       city: 'Jakarta',
-      message: 'Hey, how are you?',
+      message: "Hey, how are you? Haven't heard from you in a while.",
       status: 'Online',
     },
     {
       id: 2,
       name: 'Maya Collins',
       city: 'Bandung',
-      message: 'See you tomorrow!',
+      message: "See you tomorrow! Don't forget to bring the documents.",
       status: 'Last seen on 08:00',
     },
     {
       id: 3,
       name: 'Ethan Parker',
       city: 'Surabaya',
-      message: 'That sounds great.',
-      status: '',
+      message: "That sounds great. Let me know when you're available.",
+      status: 'Online',
     },
     {
       id: 4,
       name: 'Nadia Wilson',
       city: 'Yogyakarta',
-      message: "I'm on my way.",
-      status: 'Last seen on 08:00',
+      message: "I'm on my way. I should arrive in about fifteen minutes.",
+      status: '',
     },
     {
       id: 5,
       name: 'Julian Carter',
       city: 'Medan',
-      message: 'Have a nice day!',
-      status: 'Online',
+      message: 'Have a nice day! Hopefully we can catch up sometime soon.',
+      status: 'Last seen on 08:00',
     },
     {
       id: 6,
       name: 'Clara Morgan',
       city: 'Semarang',
-      message: 'What are you doing?',
-      status: 'Last seen on 08:00',
+      message: 'What are you doing this weekend?',
+      status: 'Online',
     },
     {
       id: 7,
       name: 'Rafael Brooks',
       city: 'Makassar',
-      message: "Let's meet later.",
-      status: 'Last seen on 08:00',
+      message: "Let's meet later. I know a nice place we could try.",
+      status: '',
     },
     {
       id: 8,
       name: 'Sophie Bennett',
       city: 'Denpasar',
-      message: 'Thanks for helping!',
-      status: '',
+      message: 'Thanks for helping! I really appreciate what you did.',
+      status: 'Online',
     },
     {
       id: 9,
       name: 'Dylan Foster',
       city: 'Malang',
-      message: 'See you soon.',
-      status: '',
+      message: "See you soon. I'll message you when I get there.",
+      status: 'Last seen on 08:00',
     },
     {
       id: 10,
       name: 'Amara Hayes',
       city: 'Palembang',
-      message: 'Good morning!',
-      status: 'Online',
+      message: "Good morning! Hope you're having a great start to the day.",
+      status: '',
     },
   ];
 
@@ -152,7 +152,7 @@ function Home() {
                       icon="iconamoon:profile-circle-fill"
                       className="text-6xl my-auto mr-2 text-gray-400 min-w-12"
                     />
-                    <div className="my-auto mx-1 min-w-0">
+                    <div className="my-auto mx-1 min-w-0 w-full">
                       <div className="flex justify-between items-center">
                         <h2 className="font-medium">{item.name}</h2>
                         <h3 className="text-xs">08:00</h3>
