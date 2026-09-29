@@ -165,8 +165,11 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="w-[80%] bg-gray-700">
+        {/* <a href="https://www.magnific.com/free-vector/hand-drawn-doodle-icons-set_24097127.htm#fromView=search&page=1&position=3&uuid=83b70490-36d6-4dee-8c48-497c3a269af0&track=ais_hybrid&query=doodle+png">Image by brgfx on Magnific</a> */}
+        {/* bg-gray-700 */}
+        <div className="w-[80%] chatContainer">
           {/* <h1>Right</h1> */}
+          {/* CONTACT/GROUP NAME TASKBAR */}
           {selectedChat.id ? (
             <div className="bg-gray-800 h-21">
               <div className="mx-8 h-full flex items-center">
