@@ -129,7 +129,22 @@ function Home() {
               icon="material-symbols:menu"
               className="text-2xl text-black m-3"
             />
-            <form className="flex-1 mt-1 mb-1">
+            <div className="border flex-1 flex mt-1 mb-1 bg-white rounded-full w-full">
+              <InlineIcon
+                icon="akar-icons:search"
+                className="text-black font-bold m-3"
+              />
+              <form className="h-full w-full">
+                <input
+                  type="text"
+                  id="search"
+                  name="search"
+                  placeholder="Search or start a new chat"
+                  className="h-full w-full border-none outline-none"
+                ></input>
+              </form>
+            </div>
+            {/* <form className="flex-1 mt-1 mb-1">
               <input
                 type="text"
                 id="search"
@@ -138,7 +153,7 @@ function Home() {
                 // onChange={(e) => handleChange(e)}
                 className="border bg-white rounded-full w-full h-full mb-2"
               ></input>
-            </form>
+            </form> */}
           </div>
           <div className="flex ms-2 me-4 my-3">
             {chatTypeButtons.map((item, index) => {
