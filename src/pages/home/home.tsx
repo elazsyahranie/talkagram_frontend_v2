@@ -45,7 +45,7 @@ function Home() {
     },
     {
       id: 2,
-      name: 'Weekend Plans',
+      name: 'WEEKEND PLANS',
       city: 'Bandung',
       message: "See you tomorrow! Don't forget to bring the documents.",
       status: 'Last seen on 08:00',
@@ -69,7 +69,7 @@ function Home() {
     },
     {
       id: 5,
-      name: 'Office Team',
+      name: 'UNITED OFFICE TEAM',
       city: 'Medan',
       message: 'Have a nice day! Hopefully we can catch up sometime soon.',
       status: 'Last seen on 08:00',
@@ -85,7 +85,7 @@ function Home() {
     },
     {
       id: 7,
-      name: 'Gaming Squad',
+      name: 'VICTORY Gaming Squad',
       city: 'Makassar',
       message: "Let's meet later. I know a nice place we could try.",
       status: '',
@@ -101,7 +101,7 @@ function Home() {
     },
     {
       id: 9,
-      name: 'Family Group',
+      name: 'Family_Group',
       city: 'Malang',
       message: "See you soon. I'll message you when I get there.",
       status: 'Last seen on 08:00',
