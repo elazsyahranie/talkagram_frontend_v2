@@ -6,7 +6,8 @@
 /* 6a7282 */
 
 /* rgb(30, 41, 57) */
-.chatContainer {
+/* <a href="https://www.magnific.com/free-vector/hand-drawn-doodle-icons-set_24097127.htm#fromView=search&page=1&position=3&uuid=83b70490-36d6-4dee-8c48-497c3a269af0&track=ais_hybrid&query=doodle+png">Image by brgfx on Magnific</a> */
+.darkChatContainer {
   background:
     linear-gradient(rgba(30, 41, 57, 0.8), rgba(30, 41, 57, 0.8)),
     url('../../assets/dark_home_background.jpg');
@@ -14,4 +15,28 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+/* <a href="https://www.magnific.com/free-vector/hand-drawn-doodle-set-with-arrows-speech-bubbles-hearts-stars-white-background_430108838.htm#fromView=search&page=1&position=13&uuid=421d2028-9da8-46c4-a811-3e23fc989200&track=ais_hybrid&query=doodle">Image by muhammad.abdullah on Magnific</a> */
+.lightChatContainer {
+  background:
+    linear-gradient(rgba(30, 41, 57, 0.2), rgba(30, 41, 57, 0.2)),
+    url('../../assets/light_home_background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* <a href="https://www.magnific.com/free-photo/empty-elegant-background-with-copy-space_20838501.htm#fromView=search&page=2&position=0&uuid=8af6e21e-d7da-4fab-ba41-e0e1394ef5fb&track=ais_hybrid&query=white+background">Image by denamorado on Magnific</a> */
+.lightChatContainer2 {
+  /* background:
+    linear-gradient(rgba(30, 41, 57, 0.2), rgba(30, 41, 57, 0.2)),
+    url('../../assets/light_home_background.jpg'); */
+  background-image: url('../../assets/light_home_background_2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-size: cover; */
+  background-size: 1500px 1000px;
 }

@@ -119,13 +119,15 @@ function Home() {
 
   return (
     <>
-      <div className="flex text-white h-screen">
-        <div className="w-[30%] h-screen  bg-gray-800 border-r border-gray-500 overflow-hidden">
-          <h1 className="text-4xl ms-2 my-3 font-semibold">Talkagram</h1>
+      <div className="flex text-black h-screen">
+        <div className="w-[30%] h-screen  bg-gray-100 border-r border-gray-500 overflow-hidden">
+          <h1 className="text-4xl ms-2 my-3 font-bold text-sky-700">
+            Talkagram
+          </h1>
           <div className="flex ms-2 me-4 my-3">
             <InlineIcon
               icon="material-symbols:menu"
-              className="text-2xl text-white m-3"
+              className="text-2xl text-black m-3"
             />
             <form className="flex-1 mt-1 mb-1">
               <input
@@ -134,7 +136,7 @@ function Home() {
                 name="search"
                 // defaultValue={item.label}
                 // onChange={(e) => handleChange(e)}
-                className="border border-gray-950 bg-gray-700 rounded-full w-full h-full mb-2"
+                className="border bg-white rounded-full w-full h-full mb-2"
               ></input>
             </form>
           </div>
@@ -143,7 +145,7 @@ function Home() {
               return (
                 <div
                   key={index}
-                  className={`hover:cursor-pointer border border-gray-500 ${selectedTypeChat === item.id && `bg-sky-700/35`} rounded-full px-3 py-1 text-sm me-3`}
+                  className={`hover:cursor-pointer border border-gray-500 ${selectedTypeChat === item.id && `bg-sky-700/60`} rounded-full px-3 py-1 text-sm me-3`}
                   onClick={() => setSelectedTypeChat(item.id)}
                 >
                   {item.label}
@@ -163,7 +165,7 @@ function Home() {
                   return (
                     <div
                       key={index}
-                      className="h-18 rounded-lg flex items-center hover:bg-gray-700 hover:cursor-pointer mb-2 max-w-88"
+                      className="h-18 rounded-lg flex items-center hover:bg-gray-300 hover:cursor-pointer mb-2 max-w-88"
                       onClick={
                         () =>
                           setSelectedChat({
@@ -201,13 +203,12 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* <a href="https://www.magnific.com/free-vector/hand-drawn-doodle-icons-set_24097127.htm#fromView=search&page=1&position=3&uuid=83b70490-36d6-4dee-8c48-497c3a269af0&track=ais_hybrid&query=doodle+png">Image by brgfx on Magnific</a> */}
         {/* bg-gray-700 */}
-        <div className="w-[80%] chatContainer">
+        <div className="w-[80%] lightChatContainer2">
           {/* <h1>Right</h1> */}
           {/* CONTACT/GROUP NAME TASKBAR */}
           {selectedChat.id ? (
-            <div className="bg-gray-800 h-21">
+            <div className="bg-gray-100 h-21">
               <div className="mx-8 h-full flex items-center">
                 {/* <h1>Name here</h1> */}
                 <InlineIcon
