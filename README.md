@@ -7,7 +7,11 @@ The frontend communicates with the backend through the API Gateway and uses Sock
 
 ## Screenshots 
 <p align="center">
-  <img src="./screenshots/landing_page_edited.jpg" width="30%" />
-  <img src="./screenshots/login_page_edited.jpg" width="30%" />
-  <img src="./screenshots/register_page_edited.jpg" width="30%" />
+  <img src="./screenshots/landing_page.jpg" width="30%" />
+  <img src="./screenshots/login_page.jpg" width="30%" />
+  <img src="./screenshots/chat_page.jpg" width="30%" />
 </p>
+
+**From left to right:** Landing page, login page, and chat page.
+
+***Note:** A small white overlay was added to the chat page screenshot (lower left) to conceal an unrelated on-screen element. It is not part of the application UI.*
